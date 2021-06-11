@@ -2,7 +2,7 @@
 
 #版本信息
 build_date="20200307"
-build_version="v1.0.0"
+build_version="v1.0.1"
 
 #当前时间 格式：2020-03-12 14:36:31
 NOW_DATE=$(date "+%Y-%m-%d %H:%M:%S")
@@ -284,7 +284,7 @@ function fun_install_run_environment(){
                 elif [[ "${var_os_release}" = "${DEBIAN_OS_RELEASE}" ]]; then
                 fun_wirte_log "${message_info_tag}检测到当前系统发行版本为:${DEBIAN_OS_RELEASE}"
                 fun_wirte_log "${message_info_tag}正在安装必需组件......"
-                apt-get install curl openssl bind-utils -y
+                apt-get install curl dnsutils openssl bind9-utils -y
             else
                 fun_wirte_log "${message_warning_tag}当前系统是:${var_os_release},不支持自动安装必需组件,建议手动安装【curl、openssl、bind-utils】"
             fi
