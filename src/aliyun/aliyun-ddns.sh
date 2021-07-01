@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #版本信息
-build_date="20200307"
-build_version="v1.0.0"
+build_date="20210701"
+build_version="v1.0.1"
 
 #当前时间 格式：2020-03-12 14:36:31
 NOW_DATE=$(date "+%Y-%m-%d %H:%M:%S")
